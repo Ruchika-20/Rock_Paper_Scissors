@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document1</title>
+    <link rel="stylesheet" href="../css/page1.css">
+    <script src="../js/script.js" defer></script>
+</head>
+<body>
+    <section class="main">
+        <div class="section1">
+            <div class="text-section">
+                <h1>ROCK <br/> PAPER <br/> SCISSORS </h1>
+            </div>
+            <div class="score-section">
+                <div class="score-box">
+                    <p>COMPUTER <br/> SCORE</p>
+                    <span class="zero">0</span>
+                </div>
+                <div class="score-box">
+                    <p>YOUR <br/> SCORE</p>
+                    <span class="zero">0</span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="main2">
+        <div class="section2">
+            <div class="section2_0">
+                <p id="text1">YOU PICKED</p>
+                <div class="circle2"><img id="ic2" src="../images/icon2.svg"/> </div>
+            </div> 
+
+            <div class="section2_1">
+                <p id="text2">YOU WIN </p>
+                <p id="txt2">AGAINST PC </p> 
+                <button id="playbtn" onclick="goToHomePage()">PLAY AGAIN</button>
+            </div>
+            <div class="section2_2">
+                <p id="text3">PC PICKED</p>
+                <div class="circle3"><img id="ic3" src="../images/icon3.svg"/> </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section3">
+        <div class="section_3">
+        <div class="section-rule" id="rulesPopup" style="display: none;">
+                <p id="gm_rule">Game Rules</p>
+                <ul id="rules">
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li><br/>
+                    <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li><br/>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li><br/>
+                    <li>If both players lay down the same hand, each player lays down another hand</li><br/>
+                </ul>
+                <div class="cross" onclick="hidePopUp()"><img id="ic4" src="../images/X.svg"/></div>
+        </div>
+            <button id="R1" onclick="showPopUp()">Rules</button>
+            <button id="N1" onclick="goToNext()">Next</button>
+        </div>
+    </div>
+</body>
+</html>
